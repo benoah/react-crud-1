@@ -7,6 +7,7 @@ import FormError from "../../common/FormError";
 import useAxios from "../../../hooks/useAxios";
 import Heading from "../../layout/Heading";
 import DashboardPage from "../DashboardPage";
+import DeletePostButton from "./DeletePostButton";
 
 const schema = yup.object().shape({
 	title: yup.string().required("Title is required"),
@@ -94,6 +95,8 @@ export default function EditPost() {
 					</div>
 
 					<button>Update</button>
+					<hr />
+					<DeletePostButton id={post.id} />
 				</fieldset>
 			</form>
 		</DashboardPage>

@@ -81,3 +81,9 @@ ul.posts a {
 	background: green;
 	color: white;
 }
+
+.delete {
+	background: red;
+	color: white;
+	border: none;
+}
