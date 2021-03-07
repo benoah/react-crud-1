@@ -18,6 +18,10 @@ nav.dashboard {
 	padding: 8px;
 }
 
+/* nav.dashboard a {
+	display: block;
+} */
+
 form {
 	margin: 1rem auto;
 	padding: 1rem;

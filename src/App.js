@@ -6,6 +6,8 @@ import DashboardPage from "./components/dashboard/DashboardPage";
 import Nav from "./components/layout/Nav";
 import { AuthProvider } from "./context/AuthContext";
 import "./App.css";
+import PostPage from "./components/dashboard/posts/PostPage";
+import AddPost from "./components/dashboard/posts/AddPost";
 
 function App() {
 	return (
@@ -23,6 +25,12 @@ function App() {
 						</Route>
 						<Route path="/dashboard" exact>
 							<DashboardPage />
+						</Route>
+						<Route path="/dashboard/posts" exact>
+							<PostPage />
+						</Route>
+						<Route path="/dashboard/posts/add">
+							<AddPost />
 						</Route>
 					</Switch>
 				</div>
