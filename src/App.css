@@ -74,3 +74,10 @@ ul.posts a {
 	color: darkred;
 	font-weight: bold;
 }
+
+.success {
+	padding: 1rem;
+	margin: 10px 0;
+	background: green;
+	color: white;
+}
