@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
 nav {
 	padding: 15px;
 	background: #ccc;
@@ -17,10 +21,6 @@ nav.dashboard {
 	background: #f3f1f1;
 	padding: 8px;
 }
-
-/* nav.dashboard a {
-	display: block;
-} */
 
 form {
 	margin: 1rem auto;
@@ -57,4 +57,20 @@ button {
 	background: #fbb;
 	color: darkred;
 	padding: 0.5rem 1rem;
+}
+
+ul.posts {
+	list-style: none;
+	padding: 0;
+}
+
+ul.posts li {
+	background: #ebebeb;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+ul.posts a {
+	color: darkred;
+	font-weight: bold;
 }

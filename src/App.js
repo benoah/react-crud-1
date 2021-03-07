@@ -8,6 +8,7 @@ import { AuthProvider } from "./context/AuthContext";
 import "./App.css";
 import PostPage from "./components/dashboard/posts/PostPage";
 import AddPost from "./components/dashboard/posts/AddPost";
+import EditPost from "./components/dashboard/posts/EditPost";
 
 function App() {
 	return (
@@ -31,6 +32,9 @@ function App() {
 						</Route>
 						<Route path="/dashboard/posts/add">
 							<AddPost />
+						</Route>
+						<Route path="/dashboard/posts/edit/:id">
+							<EditPost />
 						</Route>
 					</Switch>
 				</div>
