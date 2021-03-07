@@ -30,6 +30,10 @@ export default function AddPost() {
 
 		data.status = "publish";
 
+		if (data.featured_media === "") {
+			data.featured_media = null;
+		}
+
 		console.log(data);
 
 		try {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Heading from "../../layout/Heading";
 import DashboardPage from "../DashboardPage";
+import PostList from "./PostList";
 
 export default function PostPage() {
 	return (
@@ -9,7 +10,7 @@ export default function PostPage() {
 			<p>
 				<Link to="/dashboard/posts/add">Add post</Link>
 			</p>
-			<p>List posts here</p>
+			<PostList />
 		</DashboardPage>
 	);
 }
