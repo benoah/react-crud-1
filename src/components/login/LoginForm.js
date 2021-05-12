@@ -11,9 +11,10 @@ import AuthContext from "../../context/AuthContext";
 const url = BASE_URL + TOKEN_PATH;
 
 const schema = yup.object().shape({
-	username: yup.string().required("Please enter your username"),
+	identifier: yup.string().required("Please enter your username"),
 	password: yup.string().required("Please enter your password"),
-});
+  });
+
 
 export default function LoginForm() {
 	const [submitting, setSubmitting] = useState(false);
@@ -34,8 +35,9 @@ export default function LoginForm() {
 		// console.log(data);
 
 		try {
+			
 			const response = await axios.post(url, data);
-			console.log("response", response.data);
+			console.log("response", data);
 			setAuth(response.data);
 			history.push("/dashboard");
 		} catch (error) {
@@ -52,7 +54,7 @@ export default function LoginForm() {
 				{loginError && <FormError>{loginError}</FormError>}
 				<fieldset disabled={submitting}>
 					<div>
-						<input name="username" placeholder="Username" ref={register} />
+            <input name="identifier" placeholder="Username" ref={register} />
 						{errors.username && <FormError>{errors.username.message}</FormError>}
 					</div>
 
